@@ -1,0 +1,10 @@
+/* General stylings */
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Specific stylings */
+.changeBackgroundColor {
+    background-color:black;
+    color: whitesmoke;
+    transition: color 6s ease;
+}
