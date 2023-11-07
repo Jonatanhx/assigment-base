@@ -1,6 +1,6 @@
 # My Project
 
-"Touch grass: The Game" is a text-based story game made in Javascript for the course "Basic level Javascript" im taking in my school. The goal is to "touch grass" i.e in some way turn your life around from being a hardcore gamer into a more socially adapted individual. 
+"Touch grass: The Game" is a text-based story game made in Javascript for one of my courses "Basic level Javascript". The goal is to "touch grass" i.e in some way turn your life around from being a hardcore gamer into a more socially adapted individual. 
 
 ## Installation
 
