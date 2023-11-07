@@ -19,7 +19,7 @@
 
 
 
-let activeSceneIndex = 0;
+let activeSceneIndex = parseInt(localStorage.getItem("CurrentSceneIndex")) || 0;;
 const scenes = [
   {
     text: "Welcome to Touch grass the game!",

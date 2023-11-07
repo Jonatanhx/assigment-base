@@ -1,8 +1,12 @@
 window.addEventListener("DOMContentLoaded", main);
 
+
+
 function main() {
   renderScene();
 }
+
+
 
 function renderScene() {
   const text = document.getElementById("text");
@@ -66,9 +70,9 @@ if (activeSceneIndex === 15) {
 }
 
 
-
-
 function goToNextScene(sceneIndex) {
   activeSceneIndex = sceneIndex;
+  localStorage.setItem("CurrentSceneIndex", activeSceneIndex);
   renderScene();
+  console.log(activeSceneIndex)
 }
