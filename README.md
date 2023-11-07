@@ -8,13 +8,9 @@ To get started, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/yourusername/your-repo.git`
 
-<details>
-    Feel free to contribute by opening issues or make a pull request.
-    <summary>
-       ## Contributing
-    </summary>
-</details>
+## Contributing
 
+Feel free to contribute to this project by creating issues or by making a pull request.
 
 
 ## Usage
