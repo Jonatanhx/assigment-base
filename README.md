@@ -16,11 +16,4 @@ Here's how to use this project:
 ```javascript
 const example = require('example');
 
-<details>
-    Feel free to contribute by opening issues or make a pull request.
-    <summary>
-       ## Contributing
-    </summary>
-</details>
-
 
