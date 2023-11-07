@@ -8,3 +8,19 @@ html {
     color: whitesmoke;
     transition: color 6s ease;
 }
+#imageDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sadCatImage {
+    height: 500px;
+    width: 500px;
+    background-image: url(/images/a2b.jpg);
+    background-repeat: no-repeat;
+}
+.setBackgroundColorWhite {
+    background-color: white;
+    color: black;
+}
