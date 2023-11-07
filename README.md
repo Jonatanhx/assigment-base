@@ -7,7 +7,6 @@
 To get started, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/yourusername/your-repo.git`
-2. Install dependencies: `npm install`
 
 <details>
     Feel free to contribute by opening issues or make a pull request.
@@ -21,8 +20,5 @@ To get started, follow these steps:
 ## Usage
 
 Here's how to use this project:
-
-```javascript
-const example = require('example');
 
 
