@@ -62,17 +62,17 @@ const scenes = [
     },
     button1: {
       text: "World of Warcraft",
-      nextSceneIndex: 0,
+      nextSceneIndex: 17,
     },
     button2: {
       text: "Dota 2",
-      nextSceneIndex: 0,
+      nextSceneIndex: 6,
     },
   },
   
   // scene 3
   {
-    text: "You walk into the kitchen, hungry as a wolf...",
+    text: "You walk into the kitchen",
     description: {
       text:  "What do you make to eat?",
     },
@@ -106,15 +106,15 @@ const scenes = [
 {
   text: "Feeling energized from the caffeine, you enter a state of mania.",
   description: {
-    text:  "",
+    text:  "What do you decide to do?",
   },
   button1: {
-    text: "It is time to make a change and become healthier",
-    nextSceneIndex: 0,
+    text: "Make a change to become a healthier person",
+    nextSceneIndex: 18,
   },
 
   button2: {
-    text: "Boot up the PC and be productive playing video games",
+    text: "Be productive playing video games",
     nextSceneIndex: 6,
   },
 },
@@ -131,7 +131,7 @@ const scenes = [
 
   button2: {
     text: "Pick Sniper",
-    nextSceneIndex: 0,
+    nextSceneIndex: 16,
   },
 },
 //Scene 7 The anti-mage route
@@ -236,7 +236,7 @@ const scenes = [
   },
   //Survival path
   button1: {
-    text: "Depressed, but life goes on",
+    text: "I'm OK.",
     nextSceneIndex: 0,
   },
   //Rampage path
@@ -274,6 +274,86 @@ const scenes = [
 
   button2: {
     text: "Return to Menu",
+    nextSceneIndex: 0,
+  },
+},
+// Scene 16 sniper selected
+{
+  text: "Fucking sniper pickers man",
+  description: {
+    text:  "Make me SICK",
+  },
+  button1: {
+    text: "Play again",
+    nextSceneIndex: 1,
+  },
+
+  button2: {
+    text: "Return to Menu",
+    nextSceneIndex: 0,
+  },
+},
+//Scene 17 World of Warcraft selected
+{
+  text: "You have died",
+  description: {
+    text:  "There is no hope of ever touching grass playing this game",
+  },
+  button1: {
+    text: "Play again",
+    nextSceneIndex: 1,
+  },
+
+  button2: {
+    text: "Return to Menu",
+    nextSceneIndex: 0,
+  },
+},
+//scene 18 Chose to become healthy, introduction to inventory system
+{
+  text: "The best way of becoming healthy is to exercise and have a healthy diet.",
+  description: {
+    text:  "Invest in equipment for a home gym or get a gym membership?",
+  },
+  button1: {
+    text: "Home gym",
+    nextSceneIndex: 0,
+  },
+
+  button2: {
+    text: "Public gym",
+    nextSceneIndex: 19,
+  },
+},
+//Scene 19 ending decider gym
+{
+  text: "Fast forward 6 months, you have lost significant weight and is feeling good and more confident",
+  description: {
+    text:  "You go out for a jog and happen to swing by the gym, you see a gorgeous woman inside",
+  },
+  button1: {
+    text: "Go in and talk to her",
+    nextSceneIndex: 20,
+  },
+
+  button2: {
+    text: "Move on",
+    nextSceneIndex: 0,
+  },
+},
+//Scene 20 gym ending
+{
+  text: " ",
+  description: {
+    text:  " ",
+  },
+  button1: {
+    text: " ",
+    nextSceneIndex: 0,
+  },
+
+  button2: {
+    text: " ",
     nextSceneIndex: 0,
   },
 },

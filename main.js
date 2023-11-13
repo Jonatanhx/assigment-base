@@ -1,11 +1,15 @@
 window.addEventListener("DOMContentLoaded", main);
 
 
-
 function main() {
   renderScene();
 }
-
+function goToNextScene(sceneIndex) {
+  activeSceneIndex = sceneIndex;
+  localStorage.setItem("CurrentSceneIndex", activeSceneIndex);
+  renderScene();
+  console.log(activeSceneIndex)
+}
 
 
 function renderScene() {
@@ -25,36 +29,34 @@ function renderScene() {
   btn1.onclick = function () {
 
     goToNextScene(scene.button1.nextSceneIndex);
-    const currentScene = scenes[activeSceneIndex]
-    const catImages = document.getElementsByClassName("divIdentifier");
-
-if (activeSceneIndex === 15) {
-  for (const catImage of catImages) {
-    catImage.classList.add("sadCatImage");
-  }
-} else if (activeSceneIndex < 15) {
-  for (const catImage of catImages) {
-    catImage.classList.remove("sadCatImage");
-  }
-}
-    //* dirty code? fix.
-    if (activeSceneIndex > 0) {
-    const element = document.getElementById("bodyMain");
-    element.classList.remove("setBackgroundColorWhite")
-    element.classList.add("changeBackgroundColor");
-
-  } if (activeSceneIndex === 0) {
-    const element = document.getElementById("bodyMain");
-    element.classList.remove("changeBackgroundColor")
-    element.classList.add("setBackgroundColorWhite");
-  } 
   };
-
   btn2.onclick = function () {
     goToNextScene(scene.button2.nextSceneIndex);
-    
-    const catImages = document.getElementsByClassName("divIdentifier");
+  };
 
+
+
+  const catImages = document.getElementsByClassName("divIdentifier");
+  if (activeSceneIndex === 15) {
+    for (const catImage of catImages) {
+      catImage.classList.add("sadCatImage");
+    }
+  } else if (activeSceneIndex < 15) {
+    for (const catImage of catImages) {
+      catImage.classList.remove("sadCatImage");
+    }
+  }
+      if (activeSceneIndex > 0) {
+      const element = document.getElementById("bodyMain");
+      element.classList.remove("setBackgroundColorWhite")
+      element.classList.add("changeBackgroundColor");
+  
+    } if (activeSceneIndex === 0) {
+      const element = document.getElementById("bodyMain");
+      element.classList.remove("changeBackgroundColor")
+      element.classList.add("setBackgroundColorWhite");
+    } 
+  
     if (activeSceneIndex === 15) {
       for (const catImage of catImages) {
         catImage.classList.add("sadCatImage");
@@ -64,15 +66,15 @@ if (activeSceneIndex === 15) {
         catImage.classList.remove("sadCatImage");
       }
     }
-    
-
-  };
-}
 
 
-function goToNextScene(sceneIndex) {
-  activeSceneIndex = sceneIndex;
-  localStorage.setItem("CurrentSceneIndex", activeSceneIndex);
-  renderScene();
-  console.log(activeSceneIndex)
+
+
+
+
+
+
+
+
+
 }
