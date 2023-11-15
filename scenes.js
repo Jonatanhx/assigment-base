@@ -16,10 +16,13 @@
 },
 */
 
+let inventory = [
+  { 
+    itemName: "" 
+  },
+];
 
-
-
-let activeSceneIndex = parseInt(localStorage.getItem("CurrentSceneIndex")) || 0;;
+let activeSceneIndex = parseInt(localStorage.getItem("CurrentSceneIndex")) || 0;
 const scenes = [
   {
     text: "Welcome to Touch grass the game!",
@@ -312,6 +315,8 @@ const scenes = [
 //scene 18 Chose to become healthy, introduction to inventory system
 {
   text: "The best way of becoming healthy is to exercise and have a healthy diet.",
+
+
   description: {
     text:  "Invest in equipment for a home gym or get a gym membership?",
   },
@@ -331,9 +336,10 @@ const scenes = [
   description: {
     text:  "You go out for a jog and happen to swing by the gym, you see a gorgeous woman inside",
   },
+
   button1: {
     text: "Go in and talk to her",
-    nextSceneIndex: 20,
+    nextSceneIndex: "...",
   },
 
   button2: {
@@ -341,9 +347,9 @@ const scenes = [
     nextSceneIndex: 0,
   },
 },
-//Scene 20 gym ending
+//Scene 20 public gym ending
 {
-  text: " ",
+  text: "Luckily you got that gym membership",
   description: {
     text:  " ",
   },
@@ -358,3 +364,4 @@ const scenes = [
   },
 },
 ];
+

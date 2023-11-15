@@ -1,33 +1,45 @@
 window.addEventListener("DOMContentLoaded", main);
 
-
 function main() {
+  resetInventory();
   renderScene();
+  renderInventory();
 }
-function goToNextScene(sceneIndex) {
+
+
+const newItem1 = { itemName: "Gym Membership Card" };
+
+
+function resetInventory() {
+  if (activeSceneIndex === 0) {
+    inventory = [];
+  }
+}
+function renderInventory() {
+  const currentInventory = document.getElementById("inventoryItems");
+  currentInventory.textContent = inventory.map(item => item.itemName).join(", ");
+  console.log(inventory);
+}
+
+function goToNextScene(sceneIndex) {  
   activeSceneIndex = sceneIndex;
   localStorage.setItem("CurrentSceneIndex", activeSceneIndex);
+
   renderScene();
-  console.log(activeSceneIndex)
-}
+  renderInventory();
+  resetInventory();
+  console.log(activeSceneIndex);
+  }
 
 
 function renderScene() {
+  const scene = scenes[activeSceneIndex];
   const text = document.getElementById("text");
   const description = document.getElementById("description");
   const btn1 = document.getElementById("btn-1");
   const btn2 = document.getElementById("btn-2");
-
-
-  const scene = scenes[activeSceneIndex];
-
-  text.textContent = scene.text;
-  btn1.textContent = scene.button1.text;
-  btn2.textContent = scene.button2.text;
-  description.textContent = scene.description.text;
-
+  
   btn1.onclick = function () {
-
     goToNextScene(scene.button1.nextSceneIndex);
   };
   btn2.onclick = function () {
@@ -35,6 +47,11 @@ function renderScene() {
   };
 
 
+
+  text.textContent = scene.text;
+  btn1.textContent = scene.button1.text;
+  btn2.textContent = scene.button2.text;
+  description.textContent = scene.description.text;
 
   const catImages = document.getElementsByClassName("divIdentifier");
   if (activeSceneIndex === 15) {
@@ -66,15 +83,4 @@ function renderScene() {
         catImage.classList.remove("sadCatImage");
       }
     }
-
-
-
-
-
-
-
-
-
-
-
 }
