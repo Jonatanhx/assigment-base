@@ -1,6 +1,6 @@
 ## Touch Grass: The Game
 
-"Touch Grass: The Game" is a text-based story game made in Javascript for one of my courses "Basic level Javascript". The goal is to "touch grass" i.e in some way turn your life around from being a hardcore gamer into a more socially adapted individual. There exists various paths to beat the game, can you find them all?
+"Touch Grass: The Game" is a text-based story game made entirely in Javascript for one of my courses "Basic level Javascript". The goal is to "touch grass" i.e in some way turn your life around from being a hardcore gamer into a more socially adapted individual. There exists various paths to beat the game, can you find them all?
 
 ## Installation
 
