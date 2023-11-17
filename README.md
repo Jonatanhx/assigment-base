@@ -11,4 +11,3 @@ To get started, follow these steps:
 ## Contributing
 
 Feel free to contribute to this project by creating issues or by making a pull request.
-
