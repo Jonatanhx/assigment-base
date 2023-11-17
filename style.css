@@ -1,32 +1,58 @@
 /* General stylings */
+
 html {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-weight: bold;
 }
 /* Specific stylings */
+
 .changeBackgroundColor {
-    background-color:black;
-    color: whitesmoke;
-    transition: color 6s ease;
+	background-color: black;
+	color: whitesmoke;
+	transition: color 6s ease;
 }
 #imageDiv {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 .sadCatImage {
-    height: 500px;
-    width: 500px;
-    background-image: url(/images/a2b.jpg);
-    background-repeat: no-repeat;
+	height: 500px;
+	width: 500px;
+	background-image: url(images/a2b.jpg);
+	background-repeat: no-repeat;
 }
 .setBackgroundColorWhite {
-    background-color: white;
-    color: black;
+	background-color: white;
+	color: black;
 }
 #btn-1, #btn-2 {
-    margin-top: 10px;
+	margin-top: 10px;
+	width: 450px;
+	height: 150px;
+	border-radius: 25px;
+}
+#btn-1:hover, #btn-2:hover {
+	scale: 1.05;
 }
 #Inventory {
-    color: whitesmoke;
+	color: whitesmoke;
+	display: flex;
+	justify-content: flex-end;
+}
+#user-action-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
